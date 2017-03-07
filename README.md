@@ -29,7 +29,7 @@ $ pyenv install 3.6.0
 ```
 E agora execute este outro comando:
 ```
-pyenv global 3.6.0
+$ pyenv global 3.6.0
 ```
 Agora testa se funcionou executando:
 ```
