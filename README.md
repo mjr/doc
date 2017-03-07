@@ -1,5 +1,4 @@
 # Treinamento python/django
-OneDreams
 ## Introdução ao python
 ### Instalação
 No linux o python já vem instalado, verifique na sua máquina qual a versão está rodando abrindo o terminal e executando o seguinte comando:
