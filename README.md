@@ -618,7 +618,9 @@ Django é um framework para perfeccionistas com prazos. É gratuito e de código
 Veja, quando você está construindo um site, você sempre precisa um conjunto similar de componentes: uma maneira de lidar com a autenticação do usuário (inscrever-se, realizar login, realizar logout), painel de gerenciamento para o seu site, formulários, upload de arquivos, etc.
 
 ### Fluxo de requisição no Django
+<p align="center">
 ![Fluxo do Django](http://uilian.com/presentations/django/django-intro/images/djangoflow.png)
+</p>
 
 Quando chega uma requisição para o servidor web ela é passada para o Django que tenta descobrir do que ela se trata. Primeiro ele pega um endereço web e tenta descobrir o que fazer. Essa parte é feita pelo urlresolver do Django. (Note que o endereço de um site se chama URL - Uniform Resource Locator, em português Localizador de Recursos Uniforme, dessa forma o nome urlresolver, ou resolvedor de urls, faz sentido). Isso não é muito inteligente - leva à uma lista de padrões e tenta corresponder a URL. O Django verifica padrões de cima para baixo e se algo é correspondido, passa a solicitação para a função associada (que é chamada view).
 
