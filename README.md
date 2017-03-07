@@ -290,6 +290,51 @@ Além disso você pode mudar o valor associado com uma chave já criada no dicio
 ```
 Como você pode ver, o valor da chave `'pais'` foi alterado de `'Polonia'` para `'Alemanha'`.
 
+### Tuplas
+Há tipo em Python chamado tupla (tuple) que é similar a uma lista exceto por ele ser imutável. Sintaticamente, uma tupla é uma lista de valores separados por vírgulas:
+```
+>>> tupla = 'a', 'b', 'c', 'd', 'e'
+```
+Embora não seja necessário, é convencional colocar tuplas entre parênteses:
+```
+>>> tupla = ('a', 'b', 'c', 'd', 'e')
+```
+Para criar uma tupla com um único elemento, temos que incluir uma vírgula final:
+```
+>>> t1 = ('a',)
+>>> type(t1)
+<type 'tuple'>
+```
+Sem a vírgula, Python entende ('a') como uma string entre parênteses:
+```
+>>> t2 = ('a')
+>>> type(t2)
+<type 'string'>
+```
+Questões de sintaxe de lado, as operações em tuplas são as mesmas operações das listas. O operador índice seleciona um elemento da tupla.
+```
+>>> tupla = ('a', 'b', 'c', 'd', 'e')
+>>> tupla[0]
+'a'
+```
+E o operador slice (fatia) seleciona uma “faixa” (range) de elementos.
+```
+>>> tupla[1:3]
+('b', 'c')
+```
+Mas se tentarmos modificar um dos elementos de uma tupla, teremos um erro:
+```
+>>> tupla[0] = 'A'
+TypeError: object doesn't support item assignment
+```
+Naturalmente, mesmo que não possamos modificar os elementos de uma tupla, podemos substituí-la por uma tupla diferente:
+
+```
+>>> tupla = ('A',) + tupla[1:]
+>>> tupla
+('A', 'b', 'c', 'd', 'e')
+```
+
 ### Operadores lógicos
 ```
 >>> 5 > 2
