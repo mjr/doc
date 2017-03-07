@@ -619,7 +619,7 @@ Veja, quando você está construindo um site, você sempre precisa um conjunto s
 
 ### Fluxo de requisição no Django
 <p align="center">
-![Fluxo do Django](http://uilian.com/presentations/django/django-intro/images/djangoflow.png)
+  <img src="http://uilian.com/presentations/django/django-intro/images/djangoflow.png">
 </p>
 
 Quando chega uma requisição para o servidor web ela é passada para o Django que tenta descobrir do que ela se trata. Primeiro ele pega um endereço web e tenta descobrir o que fazer. Essa parte é feita pelo urlresolver do Django. (Note que o endereço de um site se chama URL - Uniform Resource Locator, em português Localizador de Recursos Uniforme, dessa forma o nome urlresolver, ou resolvedor de urls, faz sentido). Isso não é muito inteligente - leva à uma lista de padrões e tenta corresponder a URL. O Django verifica padrões de cima para baixo e se algo é correspondido, passa a solicitação para a função associada (que é chamada view).
